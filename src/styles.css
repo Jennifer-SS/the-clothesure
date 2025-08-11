@@ -1,0 +1,182 @@
+#app {
+  height: 100%;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #000;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+#app {
+  display: flex;
+}
+
+.swiper {
+  width: 60%;
+  height: 560px;
+  color: #000;
+}
+
+.swiper__slide {
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #000;
+  border: 2px solid #E23F58;
+  padding: 20px;
+}
+
+.swiper__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper__profile-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.swiper__name {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #FFF;
+}
+
+.swiper__data {
+  min-height: 400px;
+  width: 90%;
+  background: #FFF;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.swiper__share {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swiper__data-texts {
+  width: 100%;
+  font-size: 0.75rem;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  color: #6a6a6a;
+  /* color: #fff; */
+}
+
+.swiper__photo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+}
+
+.swiper__photo-img {
+  width: 85%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top top;
+}
+
+.swiper__data {
+  margin-top: 10px;
+}
+
+.swiper__data-description {
+  max-width: 90%;
+}
+
+.swiper__data-tags {
+  font-size: 0.6rem;
+  margin-top: 5px;
+}
+
+.swiper__reactions {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.reaction {
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 1rem;
+  /* background: #dfdfdf; */
+  background: #FFF;
+}
+
+.reaction__share {
+  margin-right: 20px;
+}
+
+.reaction:hover {
+  cursor: pointer;
+}
+
+.reaction__love-on {
+  color: #9c0000;
+}
+
+.reaction__like-on {
+  color: #003893;
+}
+
+.reaction__comment-on {
+  color: #58582b;
+}
+
+.reaction__dislike-on {
+  color: #7f58c2;
+}
+
+.reaction__of {
+  color: #000;
+}

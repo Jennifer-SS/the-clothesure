@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+:root {
+  --rosa: #E23F58;
+  --oro: #f59153;
+  --blanco: #fff;
+  --negro: #000000;
+  --azul: #3BAEB0;
+}
+
+.s3-container {
+  position: relative;
+  background: var(--primary);
+  text-align: center;
+  margin-top: -50px;
+  padding: 100px;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  width: 100%;
+}
+
+.s3-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Título */
+.s3-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 60px;
+  text-align: center;
+  color: transparent;
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+}
+
+.s3-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  background: var(--gold);
+  border-radius: 2px;
+}
+
+/* Beneficios en horizontal */
+.benefits-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.benefit-card {
+  flex: 1;
+  min-width: 280px;
+  background: var(--primary);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(201, 84, 104, 0.1);
+  transition: all 0.4s ease;
+  border: 2px solid var(--secondary);
+  position: relative;
+  z-index: 2;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(201, 84, 104, 0.2);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: inline-block;
+  background: linear-gradient(135deg, var(--secondary), var(--gold));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.benefit-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--gold);
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.benefit-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.benefit-card:hover .benefit-title::after {
+  width: 80px;
+}
+
+.benefit-description {
+  font-size: 1.05rem;
+  color: var(--white);
+  line-height: 1.7;
+}
+
+/* Partículas visibles */
+.particle {
+  position: fixed;
+  background: linear-gradient(135deg, var(--gold), rgba(198, 167, 27, 0.4));
+  border-radius: 50%;
+  filter: blur(1px);
+  z-index: 1;
+  animation: floatParticle 15s infinite linear;
+  pointer-events: none;
+}
+
+@keyframes floatParticle {
+  0% {
+    transform: translateY(100vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.7;
+  }
+
+  90% {
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translateY(-20vh) translateX(100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Eslogan */
+.s3-slogan {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+  color: var(--blue);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .benefits-container {
+    flex-wrap: wrap;
+  }
+
+  .benefit-card {
+    min-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .s3-title {
+    font-size: 2.5rem;
+  }
+
+  .benefit-card {
+    min-width: 100%;
+    max-width: 400px;
+    margin: 0 auto 25px;
+  }
+
+  .s3-slogan {
+    font-size: 1.5rem;
+  }
+}

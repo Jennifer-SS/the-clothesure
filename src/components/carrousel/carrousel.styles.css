@@ -1,0 +1,84 @@
+.carrousel {
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--white)
+}
+
+.carrousel__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.carrousel__layout {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 30px;
+    padding: 20px;
+}
+
+.carrousel__cards {
+    width: 50%;
+}
+
+.carrousel__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carrousel__title {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+}
+
+.carrousel__text {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.carrousel__arrow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carrousel__arrow-img {
+    width: 45%;
+}
+
+@media screen and (max-width: 920px) {
+    .carrousel__layout {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carrousel__description {
+        order: 1;
+    }
+
+    .carrousel__cards {
+        width: 550px;
+        order: 2;
+    }
+}
+
+@media screen and (min-width: 921px) and (max-width: 1120px) {
+    .carrousel__cards {
+        width: 60%;
+    }
+
+    .carrousel__layout {
+        gap: 0px;
+    }
+}
