@@ -71,7 +71,14 @@ export const Carrousel = ({ setViewModal }) => {
                             grabCursor={true}
                             modules={[EffectCards]}
                             className="mySwiper"
-                            onSlideChange={() => setValueMetric(refSlideSwiper, "counterSlideSwiper")}
+                            onSlideChange={() => {
+                                gtag('event', 'carrusel_interaccion', {
+                                    'event_category': 'carrusel',
+                                    'event_label': 'clic_siguiente',
+                                    'value': 1
+                                });
+                                setValueMetric(refSlideSwiper, "counterSlideSwiper");
+                            }}
                         >
                             {dataCards?.map((card) => (
                                 <SwiperSlide className='swiper__slide'>

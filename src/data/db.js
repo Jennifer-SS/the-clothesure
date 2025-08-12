@@ -15,19 +15,19 @@ export const users = [
                     {
                         id: 1,
                         user: 'Sofía Martínez',
-                        photoUrl: './user1.webp',
+                        photoUrl: './users/user1.webp',
                         text: '¡Te ves increíble! Ese vestido es perfecto para bodas.'
                     },
                     {
                         id: 2,
                         user: 'Carlos Ruiz',
-                        photoUrl: './user1.webp',
+                        photoUrl: './users/user2.webp',
                         text: 'Me gusta mucho el look, elegante y fresco.'
                     },
                     {
                         id: 3,
                         user: 'Laura Gómez',
-                        photoUrl: './user1.webp',
+                        photoUrl: './users/user3.webp',
                         text: 'No te preocupes, seguro luces genial 😉'
                     }
                 ]
@@ -55,13 +55,13 @@ export const users = [
                     {
                         id: 1,
                         user: 'Marta López',
-                        photoUrl: './user1.webp',
+                        photoUrl: '../users/user4.webp',
                         text: 'Un look casual que siempre funciona, bien hecho.'
                     },
                     {
                         id: 2,
                         user: 'Juan Pérez',
-                        photoUrl: './user1.webp',
+                        photoUrl: './users/user5.webp',
                         text: 'Para mí está perfecto, nada demasiado básico.'
                     }
                 ]
@@ -89,19 +89,19 @@ export const users = [
                     {
                         id: 1,
                         user: 'Esteban Cruz',
-                        photoUrl: './user1.webp',
+                        photoUrl: './users/user6.webp',
                         text: '¡Felicidades! El toque atrevido te queda genial.'
                     },
                     {
                         id: 2,
                         user: 'Natalia Silva',
-                        photoUrl: './user1.webp',
+                        photoUrl: './users/user7.webp',
                         text: 'Muy original, me encanta tu estilo.'
                     },
                     {
                         id: 3,
                         user: 'Ricardo Díaz',
-                        photoUrl: './user1.webp',
+                        photoUrl: './users/user8.webp',
                         text: 'Ese outfit sí que destaca, ¡bien hecho!'
                     }
                 ]
@@ -128,7 +128,7 @@ export const users = [
                 list: [
                     {
                         id: 1,
-                        user: 'Verónica Castillo',
+                        user: 'Alfredo Morales',
                         photoUrl: './user1.webp',
                         text: '¡Padrino con estilo! Ese flow no falla.'
                     },
@@ -163,7 +163,7 @@ export const users = [
                     {
                         id: 1,
                         user: 'Julio Hernández',
-                        photoUrl: './user1.webp',
+                        photoUrl: './users/user11.webp',
                         text: 'Muy fiestera y con mucho estilo, me encanta.'
                     }
                 ]

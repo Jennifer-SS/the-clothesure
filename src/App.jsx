@@ -25,11 +25,8 @@ export const App = () => {
   }, []);
 
   useEffect(() => {
-
-    // if (location.pathname !== "/admin") {
     window.addEventListener('scroll', () => setPercentageViewPage(refViewEndPage));
     return () => window.removeEventListener('scroll', () => setPercentageViewPage(refViewEndPage));
-    // }
   }, []);
 
   const [viewModal, setViewModal] = useState(false);
